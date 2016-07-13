@@ -2,15 +2,15 @@
 include("functions.php");
 
 if(isset($_POST["allWith"])) {
-  $catalog = list_all(1);
+  $catalog = list_all($db, TRUE);
 }
 
 if(isset($_POST["allWithout"])) {
-  $catalog = list_all(0);
+  $catalog = list_all($db, FALSE);
 }
 
 if(isset($_POST["nameSearch"])) {
-  $catalog = search_by();
+  $catalog = search_by($db);
 }
 
 ?>

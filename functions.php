@@ -1,9 +1,7 @@
 <?php
+include("connection.php");
 
-
-function list_all($changing = 1) {
-	include("connection.php");
-
+function list_all($db, $changing = 1) {
 		try {
 			$results = $db->prepare(
 				"SELECT name, address 
@@ -22,8 +20,7 @@ function list_all($changing = 1) {
         return $catalog;    
 }
 
-function search_by() {
-	include("connection.php");
+function search_by($db) {
 		$term = htmlspecialchars($_REQUEST['nameSearch']);
 			try {
 				$search = $db->prepare(
