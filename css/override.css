@@ -1,5 +1,5 @@
 .wrapper {
-	background-color: orange;
+	background-color: #99979c;
 	padding: 5%;
 	text-align: center;
 	border-bottom: solid 2px;
@@ -9,6 +9,28 @@
 	padding-top: 5%;
 }
 
-.content {
-	
+.results {
+	padding-bottom: 15%;
+}
+
+h1 {
+	font-weight: bold;
+}
+
+.footer {
+	background-color: #99979c;
+}
+
+.glyphicon-ok {
+	color: green;
+	font-size: 200%;
+}
+
+.glyphicon-remove {
+	color: red;
+	font-size: 200%;
+}
+
+img {
+	max-width: 50%;
 }
