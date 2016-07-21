@@ -1,6 +1,8 @@
 <?php
 
 include("functions.php");
+include("connection.php");
+var_dump(update($db, 12, 'Jim Jammy', '301 E Market St', 0));
 
 if(isset($_POST["allWith"])) {
   include("connection.php");
